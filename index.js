@@ -51,7 +51,9 @@ res.render('result',{response: response,host:req.header('host')})
 app.get('/:targetUrl',function(req,res){
   var targetUrl = req.params.targetUrl
   MongoClient.connect(databaseUrl, function (err, db) {
-
+if (err){
+  console.log(err)
+}else {
   var cursor =  db.collection('url').find({targetUrl:targetUrl})
   cursor.each (function(err,doc){
     if (err){console.log(err);}
@@ -60,6 +62,8 @@ app.get('/:targetUrl',function(req,res){
       res.redirect(doc.sourceUrl);
     }
   })
+}
+
   })
 })
 
