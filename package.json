@@ -18,6 +18,8 @@
   "homepage": "https://github.com/MouMohsen/url-shortener#readme",
   "dependencies": {
     "ejs": "^2.5.6",
-    "express": "^4.15.2"
+    "express": "^4.15.2",
+    "mongodb": "^2.2.24",
+    "path": "^0.12.7"
   }
 }
