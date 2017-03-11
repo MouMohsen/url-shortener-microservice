@@ -1,0 +1,23 @@
+{
+  "name": "url-shortener",
+  "version": "1.0.0",
+  "description": "[FreeCodeCamp] URL Shortener Microservice",
+  "main": "index.js",
+  "scripts": {
+    "test": "node index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/MouMohsen/url-shortener.git"
+  },
+  "author": "MouMohsen@FreeCodeCamp",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/MouMohsen/url-shortener/issues"
+  },
+  "homepage": "https://github.com/MouMohsen/url-shortener#readme",
+  "dependencies": {
+    "ejs": "^2.5.6",
+    "express": "^4.15.2"
+  }
+}
