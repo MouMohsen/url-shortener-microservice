@@ -4,7 +4,7 @@ var path = require('path')
 var port = process.env.PORT || 3000
 var mongodb = require('mongodb')
 var MongoClient = mongodb.MongoClient
-var databaseUrl = 'mongodb://localhost:27017/url-shortener' || 'mongodb://root:root@ds127730.mlab.com:27730/heroku_7twzffbk'
+var databaseUrl =  'mongodb://root:root@ds127730.mlab.com:27730/heroku_7twzffbk' || 'mongodb://localhost:27017/url-shortener' ||
 
 
 
